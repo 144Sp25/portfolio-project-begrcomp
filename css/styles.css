@@ -59,6 +59,20 @@ nav li a {
     text-decoration: none;
 }
 
+.round {
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgb(155, 210, 158);
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Style Rules for Main Content*/
 
 main {
@@ -124,4 +138,26 @@ footer a {
     color: #000000;
     text-decoration: none;
     text-align: center;
+}
+
+/*Style rules for mobile viewport*/
+
+/*Style rules to show mobile class and hide tab-desk class*/
+
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+.mobile h1,
+h3 {
+    .red-hat-display-uniquifier {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
 }
