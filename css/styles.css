@@ -68,25 +68,32 @@ nav li a {
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /*Style Rules for Main Content*/
 
 main {
-    padding: 2.2%;
+    padding: 1.5%;
     font-family: Cambria, Cochin, Georgia, Times, ;
+    margin: auto;
 }
 
 main p {
-    font-size: 1.3em;
+    font-size: 0.7em;
 }
 
 header h1 {
     text-align: center;
     font-size: 3em;
+}
+
+header h4 {
+    text-align: center;
 }
 
 main h3 {
@@ -104,10 +111,20 @@ main ul {
     list-style: square;
 }
 
-.link {
+.tel-link {
     color: #000000;
     text-decoration: none;
 }
+
+.tel-link {
+    margin: 0 auto;
+}
+
+.tel-link a {
+    text-decoration: none;
+}
+
+
 
 /* Style Rules for Footers*/
 footer {
@@ -118,7 +135,7 @@ footer {
     padding-left: 1em;
     padding-right: 1em;
     text-decoration: none;
-    text-align: center
+    text-align: center;
 }
 
 footer a {
@@ -137,6 +154,15 @@ footer a {
 #contact a {
     color: #000000;
     text-decoration: none;
+    text-align: center;
+}
+
+.tel-num {
+    font-size: 0.7em;
+}
+
+/*Style rules for div id "contact"*/
+.contact {
     text-align: center;
 }
 
@@ -160,4 +186,49 @@ h3 {
         font-weight: weight;
         font-style: normal;
     }
+}
+
+/*Media  Query for Tablet Viewport*/
+@media query and (min-width:620px) {
+    /*Tablet viewport: show tab-desk class, hide mobile class*/
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /*Tablet viewport: style rules for nav area*/
+
+    nav li {
+        display: inline-block;
+        margin-top: 0.5em;
+    }
+}
+
+/*Media query for Desktop Viewport*/
+@media query and (min-width:1000px),
+print {
+
+    /*Desktop Viewport: style rules for nav area*/
+    nav li {
+        font-size: 1.3em;
+    }
+
+    nav li a:hover {
+        color: rgba(0, 0, 0, 0.22);
+        background-color: rgb(155, 210, 158);
+    }
+
+    /*Desktop Viewport: style rules for main content*/
+    main h4 {
+        text-align: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+
 }
